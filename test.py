@@ -1,4 +1,5 @@
 import os
+import sys
 
 subject_dict = {'subject' : {}, 'doc_cnt' : 0}
 dictionary = set()
@@ -26,28 +27,53 @@ def read_train(frompath, filename):
     f.close()
 		
 def test_by_dir(test_dir):
+    accurate_dict = {}
     filelist = os.listdir(test_dir)
     error = 0
     test_size = len(filelist)
+    for subject in subject_dict['subject'].keys(): 
+	accurate_dict[subject] = {'classify' : 0, 'fact' : 0}
     for filename in filelist:
-	f = open('test/' + filename)
-	real_subject = filename.split('_')[0]
-	test_record = []
-	for line in f:
-	    words = line.split(' ')
-	    for wd in words:
-		w = wd.split('/')
-		if len(w) == 2:
-		    (word, prop) = w
-		    if prop.startswith('n') and word in dictionary:
-			test_record.append(word)
-	prob_subject = classify(test_record)
-	if real_subject != prob_subject:
+        real_subject = filename.split('_')[0]
+        prob_subject = test_by_file('test/' + filename)
+	accurate_dict[prob_subject]['classify'] += 1
+	if prob_subject != real_subject:
 	    error += 1	
-	    print filename, ' ', real_subject, ' ', prob_subject
-    print 'All: %s correct: %s error: %s percision: %s%%' % (test_size, test_size - error, error, 100.0 * (test_size -error) / test_size)
+            print filename, ' ', real_subject, ' ', prob_subject
+	else:
+	    accurate_dict[real_subject]['fact'] += 1
+    classify = 0
+    fact = 0
+    for subject in accurate_dict.keys():
+	classify += accurate_dict[subject]['classify'] 
+	fact += accurate_dict[subject]['fact']
+	print 'subject(%s) classify: %s fact: %s accurate: %s%%' \
+		% (subject, accurate_dict[subject]['classify'], \
+		   accurate_dict[subject]['fact'], \
+		   100.0 * accurate_dict[subject]['fact'] / accurate_dict[subject]['classify'])
+	
+    print 'All: %s correct: %s error: %s recall: %s%%\n' \
+	  'fact: %s classify: %s accurate: %s%%' \
+		% (test_size, test_size - error, error, \
+		100.0 * (test_size - error) / test_size, \
+		fact, classify, fact * 100.0 / classify)
 
-def classify(test_set):
+def test_by_file(filename):
+    f = open(filename)
+    test_record = []
+    for line in f:
+        words = line.split(' ')
+        for wd in words:
+    	    w = wd.split('/')
+    	    if len(w) == 2:
+    	        (word, prop) = w
+    	        if prop.startswith('n') and word in dictionary:
+    	    	    test_record.append(word)
+    f.close()
+    prob_subject = bayes_classify(test_record)
+    return prob_subject
+
+def bayes_classify(test_set):
     (max_prob, prob_subject) = (0, None)
     for subject in subject_dict['subject'].keys():
 	prob = 1.0 * subject_dict['subject'][subject]['doc_cnt'] / subject_dict['doc_cnt']
@@ -60,7 +86,10 @@ def classify(test_set):
 
 if __name__ == '__main__':
     read_train('./', 'data.dat')
-    test_by_dir('test/')
+    if len(sys.argv) < 2:
+        test_by_dir('test/')
+    else:
+	print 'The file classify to "%s"' % test_by_file(sys.argv[1])
     
     
     
