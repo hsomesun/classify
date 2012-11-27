@@ -6,7 +6,7 @@ TOPATH=$DPWD/$TODIR
 echo $FROMPATH
 echo $TOPATH
 mkdir $TOPATH
-cd /home/administrator/cs/dataminer/parser
+cd ../../parser
 for filename in `ls -l $FROMPATH | awk \{'print $8'\}`; do
     echo $FROMPATH/$filename
     ./parser $FROMPATH/$filename $TOPATH/$filename
