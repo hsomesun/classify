@@ -1,0 +1,55 @@
+1. Ready for train set and test set:
+   The 'data' directory contains many subject subdirectory, such as 'ent', 'game' and so on,
+   every subdirectory contains a 'link.dat' file and many shell script and python script.
+   
+   'link.dat' record the url of many html texts.
+	
+   so, if you want to classify for a subject, you should enter the 'subject' directory, 
+
+   and run: './auto.sh'
+
+   the 'auto.sh' will help you download the html text and parse words, 
+
+   and save the a file into directory 'train' and 'test'.
+
+2. Clean unused train set and test set file
+   The test set and test set file may have some rabbish text, 
+
+   if you want delete them, you could do like this:
+	
+   run: './clean.sh'
+
+   the 'clean.sh' will delete the file which bytes is less then 300bytes.
+
+3. Create train data file by bayes:
+
+   The 'train.py' is a python script for creating train data,
+  
+   you should run: 'python train.py'
+
+   the python script will read the train set file from directory 'train',
+ 
+   and output the train data file 'data.dat' .
+
+4. Test
+
+   The 'test.py' is a test script for test the classify effect,
+
+   you should run: 'python test.py'
+
+   the python script will read the test set file from directory 'test',
+
+   and output the effect.
+
+5. Classify for a url link
+   
+   The 'classify.sh' is a shell script which could classify the url link into a subject of train data file,
+
+   you should run: 'classify.sh url'
+
+   the script will tell you, it may be belong to which subject.
+ 
+   
+
+   
+   

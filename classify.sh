@@ -1,10 +1,10 @@
-TEST_FILE=$2
+TEST_FILE=`echo $1 | awk -F'/' \{'print $NF'\}`
 TEST_DOWNLOAD_FILE=$TEST_FILE.download
 TEST_EXTRACT_FILE=$TEST_FILE.extra
 DOWNLOAD_DIR=download
 
-if [ -z $1 ] && [ -z $2 ]; then
-    echo 'Argument too low, need 2 argument'
+if [ -z $1 ]; then
+    echo 'Argument too low, need 1 argument'
 else
     if [ ! -d $DOWNLOAD_DIR ]; then
 	mkdir $DOWNLOAD_DIR

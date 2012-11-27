@@ -91,7 +91,7 @@ def bayes_classify(test_set):
 	for word in test_set:
 	    (sprob, spower) = science_record(prob * subject_dict['subject'][subject]['words'][word])
 	    (prob, power) = (sprob, power + spower)
-	#print subject, prob, power
+	print subject, prob, power
 	if max_power == None or power > max_power or (prob >= max_prob and power == max_power):
 	    (max_prob, max_power, prob_subject) = (prob, power, subject)
     return prob_subject
