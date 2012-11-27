@@ -73,14 +73,27 @@ def test_by_file(filename):
     prob_subject = bayes_classify(test_record)
     return prob_subject
 
+def science_record(prob):
+    power = 0
+    while prob >= 10:
+	prob = prob / 10;
+	power += 1
+    while prob < 1:
+	prob = prob * 10 
+	power -= 1
+    return (prob, power)
+	
+    
 def bayes_classify(test_set):
-    (max_prob, prob_subject) = (0, None)
+    (max_prob, max_power, prob_subject) = (0, None, None)
     for subject in subject_dict['subject'].keys():
-	prob = 1.0 * subject_dict['subject'][subject]['doc_cnt'] / subject_dict['doc_cnt']
+	(prob, power) = science_record(1.0 * subject_dict['subject'][subject]['doc_cnt'] / subject_dict['doc_cnt'])
 	for word in test_set:
-	    prob = prob * subject_dict['subject'][subject]['words'][word] * 1000
-	if prob >= max_prob:
-	    (max_prob, prob_subject) = (prob, subject)
+	    (sprob, spower) = science_record(prob * subject_dict['subject'][subject]['words'][word])
+	    (prob, power) = (sprob, power + spower)
+	print prob, power
+	if max_power == None or power > max_power or (prob >= max_prob and power == max_power):
+	    (max_prob, max_power, prob_subject) = (prob, power, subject)
     return prob_subject
 
 
