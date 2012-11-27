@@ -3,7 +3,7 @@ SUBJECT=`pwd | awk -F'/' {'print $NF'}`_
 
 for filename in `ls -l $FROMDIR | awk \{'print $8'\}`; do
     echo $FROMDIR/$SUBJECT$filename
-#    mv $FROMDIR/$filename $FROMDIR/$SUBJECT$filename
+    mv $FROMDIR/$filename $FROMDIR/$SUBJECT$filename
 done
 
 TRAINDIR=../../train
