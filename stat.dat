@@ -1,0 +1,233 @@
+Group 0:
+subject(money) fact: 49 classify: 52 recall: 94.2307692308% correct: 49 total: 53 accurate: 92.4528301887%
+group all: 53 correct: 49 error: 4 rate: 92.4528301887%
+subject(mobile) fact: 57 classify: 61 recall: 93.4426229508% correct: 57 total: 63 accurate: 90.4761904762%
+group all: 116 correct: 106 error: 10 rate: 91.3793103448%
+subject(auto) fact: 41 classify: 43 recall: 95.3488372093% correct: 41 total: 42 accurate: 97.619047619%
+group all: 158 correct: 147 error: 11 rate: 93.0379746835%
+subject(travel) fact: 42 classify: 42 recall: 100.0% correct: 42 total: 42 accurate: 100.0%
+group all: 200 correct: 189 error: 11 rate: 94.5%
+subject(game) fact: 51 classify: 58 recall: 87.9310344828% correct: 51 total: 55 accurate: 92.7272727273%
+group all: 255 correct: 240 error: 15 rate: 94.1176470588%
+subject(ent) fact: 32 classify: 34 recall: 94.1176470588% correct: 32 total: 42 accurate: 76.1904761905%
+group all: 297 correct: 272 error: 25 rate: 91.5824915825%
+subject(edu) fact: 42 classify: 46 recall: 91.3043478261% correct: 42 total: 52 accurate: 80.7692307692%
+group all: 349 correct: 314 error: 35 rate: 89.9713467049%
+subject(tech) fact: 30 classify: 41 recall: 73.1707317073% correct: 30 total: 37 accurate: 81.0810810811%
+group all: 386 correct: 344 error: 42 rate: 89.1191709845%
+subject(sport) fact: 39 classify: 39 recall: 100.0% correct: 39 total: 40 accurate: 97.5%
+group all: 426 correct: 383 error: 43 rate: 89.9061032864%
+subject(lady) fact: 47 classify: 60 recall: 78.3333333333% correct: 47 total: 50 accurate: 94.0%
+group all: 476 correct: 430 error: 46 rate: 90.3361344538%
+
+Group 1:
+subject(auto) fact: 30 classify: 32 recall: 93.75% correct: 30 total: 33 accurate: 90.9090909091%
+group all: 33 correct: 30 error: 3 rate: 90.9090909091%
+subject(mobile) fact: 48 classify: 53 recall: 90.5660377358% correct: 48 total: 55 accurate: 87.2727272727%
+group all: 88 correct: 78 error: 10 rate: 88.6363636364%
+subject(money) fact: 44 classify: 53 recall: 83.0188679245% correct: 44 total: 52 accurate: 84.6153846154%
+group all: 140 correct: 122 error: 18 rate: 87.1428571429%
+subject(travel) fact: 35 classify: 37 recall: 94.5945945946% correct: 35 total: 37 accurate: 94.5945945946%
+group all: 177 correct: 157 error: 20 rate: 88.7005649718%
+subject(game) fact: 56 classify: 62 recall: 90.3225806452% correct: 56 total: 66 accurate: 84.8484848485%
+group all: 243 correct: 213 error: 30 rate: 87.6543209877%
+subject(ent) fact: 41 classify: 49 recall: 83.6734693878% correct: 41 total: 44 accurate: 93.1818181818%
+group all: 287 correct: 254 error: 33 rate: 88.5017421603%
+subject(edu) fact: 30 classify: 36 recall: 83.3333333333% correct: 30 total: 39 accurate: 76.9230769231%
+group all: 326 correct: 284 error: 42 rate: 87.1165644172%
+subject(tech) fact: 41 classify: 54 recall: 75.9259259259% correct: 41 total: 52 accurate: 78.8461538462%
+group all: 378 correct: 325 error: 53 rate: 85.9788359788%
+subject(sport) fact: 40 classify: 43 recall: 93.023255814% correct: 40 total: 43 accurate: 93.023255814%
+group all: 421 correct: 365 error: 56 rate: 86.6983372922%
+subject(lady) fact: 49 classify: 57 recall: 85.9649122807% correct: 49 total: 55 accurate: 89.0909090909%
+group all: 476 correct: 414 error: 62 rate: 86.974789916%
+
+Group 2:
+subject(money) fact: 46 classify: 47 recall: 97.8723404255% correct: 46 total: 59 accurate: 77.9661016949%
+group all: 59 correct: 46 error: 13 rate: 77.9661016949%
+subject(mobile) fact: 60 classify: 64 recall: 93.75% correct: 60 total: 65 accurate: 92.3076923077%
+group all: 124 correct: 106 error: 18 rate: 85.4838709677%
+subject(auto) fact: 31 classify: 32 recall: 96.875% correct: 31 total: 33 accurate: 93.9393939394%
+group all: 157 correct: 137 error: 20 rate: 87.2611464968%
+subject(travel) fact: 33 classify: 38 recall: 86.8421052632% correct: 33 total: 36 accurate: 91.6666666667%
+group all: 193 correct: 170 error: 23 rate: 88.0829015544%
+subject(game) fact: 40 classify: 49 recall: 81.6326530612% correct: 40 total: 48 accurate: 83.3333333333%
+group all: 241 correct: 210 error: 31 rate: 87.1369294606%
+subject(ent) fact: 36 classify: 38 recall: 94.7368421053% correct: 36 total: 42 accurate: 85.7142857143%
+group all: 283 correct: 246 error: 37 rate: 86.925795053%
+subject(edu) fact: 42 classify: 46 recall: 91.3043478261% correct: 42 total: 50 accurate: 84.0%
+group all: 333 correct: 288 error: 45 rate: 86.4864864865%
+subject(tech) fact: 35 classify: 58 recall: 60.3448275862% correct: 35 total: 40 accurate: 87.5%
+group all: 373 correct: 323 error: 50 rate: 86.5951742627%
+subject(sport) fact: 47 classify: 49 recall: 95.9183673469% correct: 47 total: 48 accurate: 97.9166666667%
+group all: 421 correct: 370 error: 51 rate: 87.8859857482%
+subject(lady) fact: 46 classify: 55 recall: 83.6363636364% correct: 46 total: 55 accurate: 83.6363636364%
+group all: 476 correct: 416 error: 60 rate: 87.3949579832%
+
+Group 3:
+subject(money) fact: 48 classify: 51 recall: 94.1176470588% correct: 48 total: 57 accurate: 84.2105263158%
+group all: 57 correct: 48 error: 9 rate: 84.2105263158%
+subject(mobile) fact: 56 classify: 63 recall: 88.8888888889% correct: 56 total: 64 accurate: 87.5%
+group all: 121 correct: 104 error: 17 rate: 85.9504132231%
+subject(auto) fact: 34 classify: 35 recall: 97.1428571429% correct: 34 total: 37 accurate: 91.8918918919%
+group all: 158 correct: 138 error: 20 rate: 87.3417721519%
+subject(travel) fact: 40 classify: 43 recall: 93.023255814% correct: 40 total: 40 accurate: 100.0%
+group all: 198 correct: 178 error: 20 rate: 89.898989899%
+subject(game) fact: 39 classify: 50 recall: 78.0% correct: 39 total: 50 accurate: 78.0%
+group all: 248 correct: 217 error: 31 rate: 87.5%
+subject(ent) fact: 29 classify: 36 recall: 80.5555555556% correct: 29 total: 34 accurate: 85.2941176471%
+group all: 282 correct: 246 error: 36 rate: 87.2340425532%
+subject(edu) fact: 39 classify: 44 recall: 88.6363636364% correct: 39 total: 46 accurate: 84.7826086957%
+group all: 328 correct: 285 error: 43 rate: 86.8902439024%
+subject(tech) fact: 37 classify: 51 recall: 72.5490196078% correct: 37 total: 40 accurate: 92.5%
+group all: 368 correct: 322 error: 46 rate: 87.5%
+subject(sport) fact: 40 classify: 40 recall: 100.0% correct: 40 total: 41 accurate: 97.5609756098%
+group all: 409 correct: 362 error: 47 rate: 88.5085574572%
+subject(lady) fact: 52 classify: 63 recall: 82.5396825397% correct: 52 total: 67 accurate: 77.6119402985%
+group all: 476 correct: 414 error: 62 rate: 86.974789916%
+
+Group 4:
+subject(mobile) fact: 51 classify: 60 recall: 85.0% correct: 51 total: 54 accurate: 94.4444444444%
+group all: 54 correct: 51 error: 3 rate: 94.4444444444%
+subject(auto) fact: 42 classify: 44 recall: 95.4545454545% correct: 42 total: 46 accurate: 91.3043478261%
+group all: 100 correct: 93 error: 7 rate: 93.0%
+subject(travel) fact: 33 classify: 34 recall: 97.0588235294% correct: 33 total: 34 accurate: 97.0588235294%
+group all: 134 correct: 126 error: 8 rate: 94.0298507463%
+subject(edu) fact: 42 classify: 44 recall: 95.4545454545% correct: 42 total: 53 accurate: 79.2452830189%
+group all: 187 correct: 168 error: 19 rate: 89.8395721925%
+subject(game) fact: 45 classify: 53 recall: 84.9056603774% correct: 45 total: 58 accurate: 77.5862068966%
+group all: 245 correct: 213 error: 32 rate: 86.9387755102%
+subject(ent) fact: 34 classify: 39 recall: 87.1794871795% correct: 34 total: 41 accurate: 82.9268292683%
+group all: 286 correct: 247 error: 39 rate: 86.3636363636%
+subject(money) fact: 38 classify: 41 recall: 92.6829268293% correct: 38 total: 44 accurate: 86.3636363636%
+group all: 330 correct: 285 error: 45 rate: 86.3636363636%
+subject(tech) fact: 41 classify: 53 recall: 77.358490566% correct: 41 total: 43 accurate: 95.3488372093%
+group all: 373 correct: 326 error: 47 rate: 87.399463807%
+subject(sport) fact: 58 classify: 59 recall: 98.3050847458% correct: 58 total: 61 accurate: 95.0819672131%
+group all: 434 correct: 384 error: 50 rate: 88.4792626728%
+subject(lady) fact: 36 classify: 49 recall: 73.4693877551% correct: 36 total: 42 accurate: 85.7142857143%
+group all: 476 correct: 420 error: 56 rate: 88.2352941176%
+
+Group 5:
+subject(money) fact: 37 classify: 41 recall: 90.243902439% correct: 37 total: 45 accurate: 82.2222222222%
+group all: 45 correct: 37 error: 8 rate: 82.2222222222%
+subject(mobile) fact: 50 classify: 52 recall: 96.1538461538% correct: 50 total: 56 accurate: 89.2857142857%
+group all: 101 correct: 87 error: 14 rate: 86.1386138614%
+subject(auto) fact: 43 classify: 45 recall: 95.5555555556% correct: 43 total: 43 accurate: 100.0%
+group all: 144 correct: 130 error: 14 rate: 90.2777777778%
+subject(travel) fact: 32 classify: 34 recall: 94.1176470588% correct: 32 total: 35 accurate: 91.4285714286%
+group all: 179 correct: 162 error: 17 rate: 90.5027932961%
+subject(game) fact: 49 classify: 55 recall: 89.0909090909% correct: 49 total: 54 accurate: 90.7407407407%
+group all: 233 correct: 211 error: 22 rate: 90.5579399142%
+subject(ent) fact: 40 classify: 48 recall: 83.3333333333% correct: 40 total: 44 accurate: 90.9090909091%
+group all: 277 correct: 251 error: 26 rate: 90.6137184116%
+subject(edu) fact: 35 classify: 37 recall: 94.5945945946% correct: 35 total: 42 accurate: 83.3333333333%
+group all: 319 correct: 286 error: 33 rate: 89.6551724138%
+subject(tech) fact: 44 classify: 58 recall: 75.8620689655% correct: 44 total: 49 accurate: 89.7959183673%
+group all: 368 correct: 330 error: 38 rate: 89.6739130435%
+subject(sport) fact: 49 classify: 50 recall: 98.0% correct: 49 total: 50 accurate: 98.0%
+group all: 418 correct: 379 error: 39 rate: 90.6698564593%
+subject(lady) fact: 50 classify: 56 recall: 89.2857142857% correct: 50 total: 58 accurate: 86.2068965517%
+group all: 476 correct: 429 error: 47 rate: 90.1260504202%
+
+Group 6:
+subject(money) fact: 49 classify: 52 recall: 94.2307692308% correct: 49 total: 54 accurate: 90.7407407407%
+group all: 54 correct: 49 error: 5 rate: 90.7407407407%
+subject(mobile) fact: 49 classify: 54 recall: 90.7407407407% correct: 49 total: 54 accurate: 90.7407407407%
+group all: 108 correct: 98 error: 10 rate: 90.7407407407%
+subject(auto) fact: 30 classify: 31 recall: 96.7741935484% correct: 30 total: 31 accurate: 96.7741935484%
+group all: 139 correct: 128 error: 11 rate: 92.0863309353%
+subject(travel) fact: 39 classify: 39 recall: 100.0% correct: 39 total: 41 accurate: 95.1219512195%
+group all: 180 correct: 167 error: 13 rate: 92.7777777778%
+subject(game) fact: 45 classify: 51 recall: 88.2352941176% correct: 45 total: 50 accurate: 90.0%
+group all: 230 correct: 212 error: 18 rate: 92.1739130435%
+subject(ent) fact: 35 classify: 44 recall: 79.5454545455% correct: 35 total: 37 accurate: 94.5945945946%
+group all: 267 correct: 247 error: 20 rate: 92.5093632959%
+subject(edu) fact: 38 classify: 47 recall: 80.8510638298% correct: 38 total: 45 accurate: 84.4444444444%
+group all: 312 correct: 285 error: 27 rate: 91.3461538462%
+subject(tech) fact: 39 classify: 49 recall: 79.5918367347% correct: 39 total: 49 accurate: 79.5918367347%
+group all: 361 correct: 324 error: 37 rate: 89.7506925208%
+subject(sport) fact: 47 classify: 47 recall: 100.0% correct: 47 total: 47 accurate: 100.0%
+group all: 408 correct: 371 error: 37 rate: 90.931372549%
+subject(lady) fact: 56 classify: 61 recall: 91.8032786885% correct: 56 total: 67 accurate: 83.5820895522%
+group all: 475 correct: 427 error: 48 rate: 89.8947368421%
+
+Group 7:
+subject(money) fact: 47 classify: 53 recall: 88.679245283% correct: 47 total: 52 accurate: 90.3846153846%
+group all: 52 correct: 47 error: 5 rate: 90.3846153846%
+subject(mobile) fact: 40 classify: 42 recall: 95.2380952381% correct: 40 total: 46 accurate: 86.9565217391%
+group all: 98 correct: 87 error: 11 rate: 88.7755102041%
+subject(auto) fact: 49 classify: 50 recall: 98.0% correct: 49 total: 51 accurate: 96.0784313725%
+group all: 149 correct: 136 error: 13 rate: 91.2751677852%
+subject(travel) fact: 43 classify: 44 recall: 97.7272727273% correct: 43 total: 43 accurate: 100.0%
+group all: 192 correct: 179 error: 13 rate: 93.2291666667%
+subject(game) fact: 47 classify: 52 recall: 90.3846153846% correct: 47 total: 56 accurate: 83.9285714286%
+group all: 248 correct: 226 error: 22 rate: 91.1290322581%
+subject(ent) fact: 34 classify: 41 recall: 82.9268292683% correct: 34 total: 35 accurate: 97.1428571429%
+group all: 283 correct: 260 error: 23 rate: 91.8727915194%
+subject(edu) fact: 44 classify: 48 recall: 91.6666666667% correct: 44 total: 51 accurate: 86.2745098039%
+group all: 334 correct: 304 error: 30 rate: 91.0179640719%
+subject(tech) fact: 40 classify: 53 recall: 75.4716981132% correct: 40 total: 48 accurate: 83.3333333333%
+group all: 382 correct: 344 error: 38 rate: 90.0523560209%
+subject(sport) fact: 53 classify: 53 recall: 100.0% correct: 53 total: 56 accurate: 94.6428571429%
+group all: 438 correct: 397 error: 41 rate: 90.6392694064%
+subject(lady) fact: 32 classify: 39 recall: 82.0512820513% correct: 32 total: 37 accurate: 86.4864864865%
+group all: 475 correct: 429 error: 46 rate: 90.3157894737%
+
+Group 8:
+subject(money) fact: 44 classify: 47 recall: 93.6170212766% correct: 44 total: 51 accurate: 86.2745098039%
+group all: 51 correct: 44 error: 7 rate: 86.2745098039%
+subject(mobile) fact: 48 classify: 51 recall: 94.1176470588% correct: 48 total: 56 accurate: 85.7142857143%
+group all: 107 correct: 92 error: 15 rate: 85.9813084112%
+subject(auto) fact: 53 classify: 55 recall: 96.3636363636% correct: 53 total: 55 accurate: 96.3636363636%
+group all: 162 correct: 145 error: 17 rate: 89.5061728395%
+subject(travel) fact: 38 classify: 39 recall: 97.4358974359% correct: 38 total: 38 accurate: 100.0%
+group all: 200 correct: 183 error: 17 rate: 91.5%
+subject(game) fact: 42 classify: 54 recall: 77.7777777778% correct: 42 total: 51 accurate: 82.3529411765%
+group all: 251 correct: 225 error: 26 rate: 89.6414342629%
+subject(ent) fact: 29 classify: 35 recall: 82.8571428571% correct: 29 total: 33 accurate: 87.8787878788%
+group all: 284 correct: 254 error: 30 rate: 89.4366197183%
+subject(edu) fact: 24 classify: 27 recall: 88.8888888889% correct: 24 total: 29 accurate: 82.7586206897%
+group all: 313 correct: 278 error: 35 rate: 88.8178913738%
+subject(tech) fact: 42 classify: 54 recall: 77.7777777778% correct: 42 total: 45 accurate: 93.3333333333%
+group all: 358 correct: 320 error: 38 rate: 89.3854748603%
+subject(sport) fact: 53 classify: 54 recall: 98.1481481481% correct: 53 total: 55 accurate: 96.3636363636%
+group all: 413 correct: 373 error: 40 rate: 90.3147699758%
+subject(lady) fact: 52 classify: 59 recall: 88.1355932203% correct: 52 total: 62 accurate: 83.8709677419%
+group all: 475 correct: 425 error: 50 rate: 89.4736842105%
+
+Group 9:
+subject(money) fact: 53 classify: 60 recall: 88.3333333333% correct: 53 total: 59 accurate: 89.8305084746%
+group all: 59 correct: 53 error: 6 rate: 89.8305084746%
+subject(mobile) fact: 46 classify: 51 recall: 90.1960784314% correct: 46 total: 51 accurate: 90.1960784314%
+group all: 110 correct: 99 error: 11 rate: 90.0%
+subject(auto) fact: 46 classify: 47 recall: 97.8723404255% correct: 46 total: 50 accurate: 92.0%
+group all: 160 correct: 145 error: 15 rate: 90.625%
+subject(travel) fact: 30 classify: 35 recall: 85.7142857143% correct: 30 total: 31 accurate: 96.7741935484%
+group all: 191 correct: 175 error: 16 rate: 91.6230366492%
+subject(game) fact: 58 classify: 66 recall: 87.8787878788% correct: 58 total: 64 accurate: 90.625%
+group all: 255 correct: 233 error: 22 rate: 91.3725490196%
+subject(ent) fact: 33 classify: 38 recall: 86.8421052632% correct: 33 total: 39 accurate: 84.6153846154%
+group all: 294 correct: 266 error: 28 rate: 90.4761904762%
+subject(edu) fact: 36 classify: 43 recall: 83.7209302326% correct: 36 total: 43 accurate: 83.7209302326%
+group all: 337 correct: 302 error: 35 rate: 89.6142433234%
+subject(tech) fact: 46 classify: 58 recall: 79.3103448276% correct: 46 total: 55 accurate: 83.6363636364%
+group all: 392 correct: 348 error: 44 rate: 88.7755102041%
+subject(sport) fact: 35 classify: 35 recall: 100.0% correct: 35 total: 36 accurate: 97.2222222222%
+group all: 428 correct: 383 error: 45 rate: 89.4859813084%
+subject(lady) fact: 39 classify: 42 recall: 92.8571428571% correct: 39 total: 47 accurate: 82.9787234043%
+group all: 475 correct: 422 error: 53 rate: 88.8421052632%
+
+All: 
+subject(mobile) fact: 505 classify: 551 recall: 91.6515426497% correct: 505 total: 564 accurate: 89.5390070922%
+subject(money) fact: 455 classify: 497 recall: 91.5492957746% correct: 455 total: 526 accurate: 86.5019011407%
+subject(travel) fact: 365 classify: 385 recall: 94.8051948052% correct: 365 total: 377 accurate: 96.8169761273%
+subject(edu) fact: 372 classify: 418 recall: 88.995215311% correct: 372 total: 450 accurate: 82.6666666667%
+subject(game) fact: 472 classify: 550 recall: 85.8181818182% correct: 472 total: 552 accurate: 85.5072463768%
+subject(ent) fact: 343 classify: 402 recall: 85.3233830846% correct: 343 total: 391 accurate: 87.7237851662%
+subject(auto) fact: 399 classify: 414 recall: 96.3768115942% correct: 399 total: 421 accurate: 94.7743467933%
+subject(tech) fact: 395 classify: 529 recall: 74.6691871456% correct: 395 total: 458 accurate: 86.2445414847%
+subject(sport) fact: 461 classify: 469 recall: 98.2942430704% correct: 461 total: 477 accurate: 96.6457023061%
+subject(lady) fact: 459 classify: 541 recall: 84.842883549% correct: 459 total: 540 accurate: 85.0%
+all: 4756 correct: 4226 error: 530 rate: 88.8561816653%
+

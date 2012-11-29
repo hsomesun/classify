@@ -1,13 +1,28 @@
 import os
 import math
 
-stop_set = set()
-#{ word1 : (filelist1), .. wordn : (filelistn) }
-word_dict = {}
-sort_word_list = []
-TF_IDF_dict = {}
-subject_dict = {}
-dictionary = set()
+global stop_set
+global word_dict
+global sort_word_list
+global TF_IDF_dict
+global subject_dict
+global dictionary
+
+def init():
+    global stop_set
+    global word_dict
+    global sort_word_list
+    global TF_IDF_dict
+    global subject_dict
+    global dictionary
+
+    stop_set = set()
+    #{ word1 : (filelist1), .. wordn : (filelistn) }
+    word_dict = {}
+    sort_word_list = []
+    TF_IDF_dict = {}
+    subject_dict = {}
+    dictionary = set()
 
 def listdir(rootpath):
     return os.listdir(rootpath) 
@@ -56,9 +71,9 @@ def count_file(frompath, filename):
 		    subject_dict[subject]['words'][word].add(filename)
     f.close()
 
-def create_train(topath, filenum, filelist):
+def create_train(topath, filenum, filelist, result_file):
     print 'creating...'
-    f = open(topath + 'data.dat', "w")
+    f = open(topath + result_file, "w")
     
     title = str(len(dictionary))
     for word in dictionary:
@@ -118,13 +133,14 @@ def CHI(N):
     print 'CHI end!'
 
 if __name__ == '__main__':
-
+    init()
     get_stop_words('stop_words_ch.txt')
     frompath = 'train/'
     topath = './'
+    result_file = 'data.dat'
     filelist = listdir(frompath)
     filenum = len(filelist)
     count(frompath, filenum, filelist)
     CHI(filenum)
-    create_train(topath, filenum, filelist)
+    create_train(topath, filenum, filelist, result_file)
     

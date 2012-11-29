@@ -1,8 +1,16 @@
 import os
 import sys
 
-subject_dict = {'subject' : {}, 'doc_cnt' : 0}
-dictionary = set()
+global subject_dict
+global dictionary
+
+def init():
+    global subject_dict
+    global dictionary
+
+    subject_dict = {'subject' : {}, 'doc_cnt' : 0}
+    dictionary = set()
+
 
 def read_train(frompath, filename):
     f = open(frompath + filename)
@@ -27,36 +35,44 @@ def read_train(frompath, filename):
     f.close()
 		
 def test_by_dir(test_dir):
-    accurate_dict = {}
     filelist = os.listdir(test_dir)
+    test_by_filelist('test/', filelist)
+
+def test_by_filelist(frompath, filelist):
+    rate_dict = {}
     error = 0
     test_size = len(filelist)
     for subject in subject_dict['subject'].keys(): 
-	accurate_dict[subject] = {'classify' : 0, 'fact' : 0}
+	rate_dict[subject] = {'classify' : 0, 'fact' : 0, 'error' : 0, 'total' : 0}
     for filename in filelist:
         real_subject = filename.split('_')[0]
-        prob_subject = test_by_file('test/' + filename)
-	accurate_dict[prob_subject]['classify'] += 1
+        prob_subject = test_by_file(frompath + filename)
+	rate_dict[prob_subject]['classify'] += 1
+	rate_dict[real_subject]['total'] += 1
 	if prob_subject != real_subject:
+	    rate_dict[real_subject]['error'] += 1
 	    error += 1	
             print filename, ' ', real_subject, ' ', prob_subject
 	else:
-	    accurate_dict[real_subject]['fact'] += 1
+	    rate_dict[real_subject]['fact'] += 1
     classify = 0
     fact = 0
-    for subject in accurate_dict.keys():
-	classify += accurate_dict[subject]['classify'] 
-	fact += accurate_dict[subject]['fact']
-	print 'subject(%s) classify: %s fact: %s accurate: %s%%' \
-		% (subject, accurate_dict[subject]['classify'], \
-		   accurate_dict[subject]['fact'], \
-		   100.0 * accurate_dict[subject]['fact'] / accurate_dict[subject]['classify'])
+    for subject in rate_dict.keys():
+	classify += rate_dict[subject]['classify'] 
+	fact += rate_dict[subject]['fact']
+	print 'subject(%s) fact: %s classify: %s recall: %s%% correct: %s total: %s accurate: %s%%' \
+		% (subject, \
+		   rate_dict[subject]['fact'], \
+		   rate_dict[subject]['classify'], \
+		   100.0 * rate_dict[subject]['fact'] / rate_dict[subject]['classify'], \
+		   rate_dict[subject]['fact'], \
+		   rate_dict[subject]['total'], \
+		   100.0 * (rate_dict[subject]['fact']) / rate_dict[subject]['total'])
 	
-    print 'All: %s correct: %s error: %s recall: %s%%\n' \
-	  'fact: %s classify: %s accurate: %s%%' \
+    print 'All: %s correct: %s error: %s rate: %s%%\n' \
 		% (test_size, test_size - error, error, \
-		100.0 * (test_size - error) / test_size, \
-		fact, classify, fact * 100.0 / classify)
+		100.0 * (test_size - error) / test_size)
+    return rate_dict
 
 def test_by_file(filename):
     f = open(filename)
@@ -91,13 +107,14 @@ def bayes_classify(test_set):
 	for word in test_set:
 	    (sprob, spower) = science_record(prob * subject_dict['subject'][subject]['words'][word])
 	    (prob, power) = (sprob, power + spower)
-	print subject, prob, power
+	#print subject, prob, power
 	if max_power == None or power > max_power or (prob >= max_prob and power == max_power):
 	    (max_prob, max_power, prob_subject) = (prob, power, subject)
     return prob_subject
 
 
 if __name__ == '__main__':
+    init()
     read_train('./', 'data.dat')
     if len(sys.argv) < 2:
         test_by_dir('test/')
