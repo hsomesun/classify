@@ -1,7 +1,7 @@
 FROMDIR=parser
 SUBJECT=`pwd | awk -F'/' {'print $NF'}`_
 
-for filename in `ls -l $FROMDIR | awk \{'print $8'\}`; do
+for filename in `ls -l $FROMDIR | awk \{'print $NF'\}`; do
     echo $FROMDIR/$SUBJECT$filename
     mv $FROMDIR/$filename $FROMDIR/$SUBJECT$filename
 done
@@ -15,9 +15,9 @@ if [ ! -d $TESTDIR ]; then
     mkdir $TESTDIR
 fi
 
-for filename in `ls -l $FROMDIR | head -200 | awk \{'print $8'\}`; do
+for filename in `ls -l $FROMDIR | head -200 | awk \{'print $NF'\}`; do
     cp $FROMDIR/$filename $TESTDIR
 done
-for filename in `ls -l $FROMDIR | tail -n +200 | awk \{'print $8'\}`; do
+for filename in `ls -l $FROMDIR | tail -n +200 | awk \{'print $NF'\}`; do
     cp $FROMDIR/$filename $TRAINDIR
 done
